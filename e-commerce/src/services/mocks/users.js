@@ -1,6 +1,6 @@
-import { usuarios } from "../data/users";
+import usuarios from "../../data/users";
 
-const obtenerUsuarios = () => {
+const getUsers = () => {
   return new Promise((resolve, reject) => {
     // Acá tienen que pasar cosas con éxito o sin éxito
     const operaciónExitosa = true; // Simulación de éxito o fracaso
@@ -13,4 +13,16 @@ const obtenerUsuarios = () => {
   });
 };
 
-export { obtenerUsuarios };
+const addUser = (user) => {
+  // Simulated function to add a user
+};
+
+const removeUser = (userId) => {
+  // Simulated function to remove a user
+};
+
+const updateUser = (userId, updatedInfo) => {
+  // Simulated function to update a user
+};
+
+export const users = { getUsers, addUser, removeUser, updateUser };

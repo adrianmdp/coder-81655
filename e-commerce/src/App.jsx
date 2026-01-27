@@ -1,24 +1,37 @@
-import "./App.css";
-import { Counter } from "./components/Counter";
+import { Routes, Route } from "react-router";
+
 import { Home } from "./pages/Home";
-import { Contact } from "./pages/Usuarios";
 import { Services } from "./pages/Services";
+import { Users } from "./pages/Users";
+import { Contact } from "./pages/Contact";
+
+import "./App.css";
+import { Nav } from "./components/Nav";
+import { User } from "./pages/User";
+import { Profile } from "./pages/Profile";
+
+// http://localhost:5173/
+// http://localhost:5173/contact
+// http://localhost:5173/users
+// http://localhost:5173/services
 
 function App() {
-  // const [mostrar, setMostrar] = useState(false);
-
-  // const handleClick = () => {
-  //   setMostrar(!mostrar);
-  // };
-
   return (
     <>
-      {/* <Counter />
-      <div class="btn" id="asd" data-value="hola"></div> */}
-      {/* <button onClick={handleClick}>Mostrar home</button> */}
-      {/* {mostrar && <Home />} */}
-      {/* <Contact /> */}
-      <Services />
+      <Nav />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/users" element={<Users />} />
+        <Route path="/users/:id" element={<User />} />
+        <Route path="/profile/:userId" element={<Profile />} />
+        <Route path="/services" element={<Services />} />
+
+        {/* <Route element={<AuthLayout />}>
+          <Route path="login" element={<Login />} />
+          <Route path="register" element={<Register />} />
+        </Route> */}
+      </Routes>
     </>
   );
 }
