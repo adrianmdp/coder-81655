@@ -10,6 +10,8 @@ import { Nav } from "./components/Nav";
 import { User } from "./pages/User";
 import { Profile } from "./pages/Profile";
 
+// Acá agregamos bootstrap para que se vea un poco mejor
+
 // http://localhost:5173/
 // http://localhost:5173/contact
 // http://localhost:5173/users
@@ -28,9 +30,9 @@ function App() {
         <Route path="/services" element={<Services />} />
 
         {/* <Route element={<AuthLayout />}>
-          <Route path="login" element={<Login />} />
-          <Route path="register" element={<Register />} />
-        </Route> */}
+            <Route path="login" element={<Login />} />
+            <Route path="register" element={<Register />} />
+          </Route> */}
       </Routes>
     </>
   );

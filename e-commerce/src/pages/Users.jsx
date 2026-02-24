@@ -8,7 +8,7 @@ const Users = () => {
 
   const [queryParams, setQueryParams] = useSearchParams();
 
-  services.jsonplaceholder.users.getUsers().then((response) => {
+  services.firestore.users.getUsers().then((response) => {
     if (response.success) setUsers(response.data);
   });
 
