@@ -1,4 +1,4 @@
-const Loigun = () => {
+const Login = () => {
     return (
         <div>
             <h1>Login</h1>
@@ -6,4 +6,4 @@ const Loigun = () => {
     )
 }   
 
-export default Loigun;
+export  { Login }
