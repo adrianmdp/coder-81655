@@ -28,9 +28,9 @@ function App() {
         <Route path="/services" element={<Services />} />
 
         {/* <Route element={<AuthLayout />}>
-          <Route path="login" element={<Login />} />
-          <Route path="register" element={<Register />} />
-        </Route> */}
+            <Route path="login" element={<Login />} />
+            <Route path="register" element={<Register />} />
+          </Route> */}
       </Routes>
     </>
   );
