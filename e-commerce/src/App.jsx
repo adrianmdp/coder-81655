@@ -10,6 +10,8 @@ import { Nav } from "./components/Nav";
 import { User } from "./pages/User";
 import { Profile } from "./pages/Profile";
 
+// Acá agregamos bootstrap para que se vea un poco mejor
+
 // http://localhost:5173/
 // http://localhost:5173/contact
 // http://localhost:5173/users
