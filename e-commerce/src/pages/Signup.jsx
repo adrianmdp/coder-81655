@@ -6,7 +6,7 @@ const SignUp = () => {
 
     return (
         <div>
-            <h1>Sign Up Page</h1>
+            <h1>Sign gitUp Page</h1>
             {/* Sign up form goes here */}
         </div>
     )
