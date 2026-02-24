@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form"
 
 const SignUp = () => {
 
-    const { register, handleSubmit } = useForm()
+    const { register } = useForm()
 
     return (
         <div>
